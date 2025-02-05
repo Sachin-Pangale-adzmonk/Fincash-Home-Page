@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fincash</title>
+
+    <link
+      rel="shortcut icon"
+      href="Images/favicon_Icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- awesome font link -->
+    <link rel="stylesheet" href="AwesomeFont-links/all.min.css" />
+    <script src="AwesomeFont-links/all.min.js"></script>
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="Slider-links/css/swiper-bundle.min.css" />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- navbar section start -->
+    <section class="navbar-section py-2">
+      <div
+        class="nav-container d-flex justify-content-between align-items-center"
+      >
+        <div class="d-flex">
+          <a href="Index.html" class="logo">
+            <img src="Images/logo.png" alt="logo" />
+          </a>
+
+          <ul class="menu-container">
+            <div class="main-menu">
+              <li>
+                <a href=""
+                  >SOLUTIONS &nbsp;<i class="fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="https://www.fincash.com/solutions/savings-plus"
+                      >SavingPlus</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.fincash.com/solutions/smart-sip"
+                      >SmartSIP</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.fincash.com/solutions/tax-saver"
+                      >TaxSaver</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.fincash.com/solutions/new-fund-offers"
+                      >New Funs Offers</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <div class="main-menu">
+              <li>
+                <a href="https://www.fincash.com/explore">EXPLORE FUNDS</a>
+              </li>
+            </div>
+            <div class="main-menu">
+              <li>
+                <a href=""
+                  >CALCULATOR &nbsp;<i class="fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="https://www.fincash.com/calculator/tax"
+                      >Tax Calculator</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.fincash.com/calculator/lumpsum/returns"
+                      >Growth of Lumpsum</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.fincash.com/calculator/sip/returns"
+                      >Growth of SIP</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.fincash.com/calculator/sip/goals-q-retirement-planning"
+                      >Retirement Planning</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.fincash.com/calculator/sip/goals-q-higher-education"
+                      >Higher Education</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.fincash.com/calculator/sip/goals-q-marriage"
+                      >Marriage Expense</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.fincash.com/calculator/sip/goals-q-buy-house"
+                      >Buy a House</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.fincash.com/calculator/sip/goals-q-buy-vehicle"
+                      >Buy a Vehicle</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.fincash.com/calculator/sip/goals-q-other"
+                      >Any other Goal</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="">
+          <form action="" class="nav-search-bar position-relative">
+            <input
+              class="search-bar"
+              type="text"
+              name="search"
+              placeholder="What are you looking for today?"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+        <div class="mob-bar"></div>
+        <div class="login-section">
+          <div class="btn-box">
+            <a href="login.html">
+              <button class="login-btn">Login/ Sign Up</button>
+            </a>
+          </div>
+        </div>
+        <div class="menu-btn">
+          <i id="open-menu" class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <i
+            id="close-menu"
+            style="display: none"
+            class="fa-solid fa-xmark"
+            onclick="closemenu()"
+          ></i>
+        </div>
+      </div>
+
+      <div id="mob-navbar" class="mob-nav-box">
+        <div class="mob-login-section">
+          <div class="btn-box">
+            <a href="login.html">
+              <button class="login-btn">Login/ Sign Up</button>
+            </a>
+          </div>
+        </div>
+        <ul class="mob-nav-container">
+          <div class="mob-nav-menu">
+            <li>
+              <a href=""
+                >SOLUTIONS &nbsp;<i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="mob-nav-sub-menu">
+                <li>
+                  <a href="https://www.fincash.com/solutions/savings-plus"
+                    >SavingPlus</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.fincash.com/solutions/smart-sip"
+                    >SmartSIP</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.fincash.com/solutions/tax-saver"
+                    >TaxSaver</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.fincash.com/solutions/new-fund-offers"
+                    >New Funs Offers</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div class="mob-nav-menu">
+            <li><a href="https://www.fincash.com/explore">EXPLORE FUNDS</a></li>
+          </div>
+          <div class="mob-nav-menu">
+            <li>
+              <a href=""
+                >CALCULATOR &nbsp;<i class="fa-solid fa-angle-down"></i
+              ></a>
+              <ul class="mob-nav-sub-menu">
+                <li>
+                  <a href="https://www.fincash.com/calculator/tax"
+                    >Tax Calculator</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.fincash.com/calculator/lumpsum/returns"
+                    >Growth of Lumpsum</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.fincash.com/calculator/sip/returns"
+                    >Growth of SIP</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fincash.com/calculator/sip/goals-q-retirement-planning"
+                    >Retirement Planning</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fincash.com/calculator/sip/goals-q-higher-education"
+                    >Higher Education</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fincash.com/calculator/sip/goals-q-marriage"
+                    >Marriage Expense</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fincash.com/calculator/sip/goals-q-buy-house"
+                    >Buy a House</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fincash.com/calculator/sip/goals-q-buy-vehicle"
+                    >Buy a Vehicle</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.fincash.com/calculator/sip/goals-q-other"
+                    >Any other Goal</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <!-- navbar section end -->
+
+    <!-- hero section start -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          style="
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #245e81;
+          "
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          style="
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #245e81;
+          "
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          style="
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #245e81;
+          "
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          style="
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #245e81;
+          "
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          style="
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #245e81;
+          "
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active position-relative">
+          <img
+            src="Images/credit-score-banner-3-1.jpg"
+            class=""
+            alt="credit_score_banner"
+          />
+          <div class="carousel-sub">
+            <h1 style="color: #183b6c">Check credit <br />score for Free</h1>
+            <p style="color: #245e81">Make your Dreams come true</p>
+            <a href=""><button class="login-btn">Apply Now</button></a>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="Images/credit-score-banner-2.jpg"
+            class=""
+            alt="credit_score_banner"
+          />
+          <div class="carousel-sub">
+            <h1 style="color: #183b6c">Save taxes up to 1.5 Lakh*</h1>
+            <p style="color: #ffffff">
+              with 3 years complimentary Standard Maintenance
+            </p>
+            <a href=""><button class="login-btn">Check Now</button></a>
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="Images/credit-score-banner-3-1.jpg"
+            class=""
+            alt="credit_score_banner"
+          />
+          <div class="carousel-sub">
+            <h1 style="color: #183b6c">Benefits of up to 2.15 Lakh*</h1>
+            <p style="color: #245e81">
+              with 3 years complimentary Standard Maintenance
+            </p>
+            <a href=""
+              ><button class="login-btn">Book Test Drive</button></a
+            >
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img
+            src="Images/skoda-banner-1.jpg"
+            class=""
+            alt="credit_score_banner"
+          />
+          <div class="carousel-sub">
+            <h1 style="color: #77fbad">
+              Starting at <i class="fa-solid fa-indian-rupee-sign"></i> 789000*
+            </h1>
+            <p style="color: #ffffff">We put it to test. Now it’s your turn.</p>
+            <a href=""
+              ><button
+                style="background-color: #77fbad; color: #000000"
+                class="login-btn"
+              >
+                Book Test Drive
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="carousel-item position-relative">
+          <img src="Images/ads-banner.jpg" class="" alt="credit_score_banner" />
+          <div class="carousel-sub">
+            <h1 style="color: #292a2b">Ads Heading</h1>
+            <p style="color: #000000">Ads Sub Heading</p>
+            <a href=""><button class="login-btn">Apply Now</button></a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- hero section end -->
+
+    <!-- feature section start -->
+    <section class="feature-section container-fuild position-relative">
+      <h2 class="text-center mt-5" style="font-weight: bold">Our Products</h2>
+
+      <div class="container-md feature-container p-3">
+        <a href="https://www.fincash.com/pl/">
+          <div class="feature-content-box box-border">
+            <div class="image-box">
+              <img
+                class="feture-img"
+                src="Images/personal_loan.png"
+                alt="personal_loan"
+              />
+            </div>
+            <h6>Personal Loan</h6>
+            <p class="pt-2" style="font-size: 12px">
+              Earn better returns than bank account with instant redemption & no
+              exit load in liquid funds
+            </p>
+          </div>
+        </a>
+
+        <a href="https://www.fincash.com/pl/">
+          <div class="feature-content-box box-border">
+            <div class="image-box">
+              <img
+                class="credit-img"
+                src="Images/credit_score.png"
+                alt="credit_score"
+              />
+            </div>
+            <h6>Credit Score</h6>
+            <p class="pt-2" style="font-size: 12px">
+              Earn better returns than bank account with instant redemption & no
+              exit load in liquid funds
+            </p>
+          </div>
+        </a>
+
+        <a href="https://www.fincash.com/solutions/savings-plus">
+          <div class="feature-content-box box-border">
+            <div class="image-box">
+              <img
+                class="feture-img"
+                src="Images/savingplus.png"
+                alt="saving_Plus"
+              />
+            </div>
+            <h6>SavingPlus</h6>
+            <p class="pt-2" style="font-size: 12px">
+              Earn better returns than bank account with instant redemption & no
+              exit load in liquid funds
+            </p>
+          </div>
+        </a>
+
+        <a href="https://www.fincash.com/solutions/smart-sip">
+          <div class="feature-content-box box-border">
+            <div class="image-box">
+              <img
+                class="feture-img"
+                src="Images/smartsip.png"
+                alt="smartsip"
+              />
+            </div>
+            <h6>SmartSIP</h6>
+            <p class="pt-2" style="font-size: 12px">
+              Invest in top funds to start a Systematic Investment Plan (SIP) in
+              less than 2 mins
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- vertical ads-left section start -->
+      <div id="ad-left" class="vertical-ads-container">
+        <!-- Google AdSense Code -->
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+          data-ad-slot="xxxxxxxxxx"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        >
+          <img src="Images/ban-3.png" width="100%" alt=""
+        /></ins>
+        <script>
+          // (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <!-- vertical ads-right section start -->
+      <div id="ad-right" class="vertical-ads-container">
+        <!-- Google AdSense Code -->
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+          data-ad-slot="xxxxxxxxxx"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        >
+          <img src="Images/ban-3.png" width="100%" alt=""
+        /></ins>
+        <script>
+          // (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+      <!-- vertical ads section end -->
+    </section>
+    <!-- feature section end -->
+
+    <!-- google Ads section start -->
+    <section class="container-md p-4">
+      <div class="ad-container">
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-XXXXXX"
+          data-ad-slot="YYYYYY"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        >
+          <img class="long" style="width: 100%" src="Images/ban-2.jpg" alt="" />
+          <img class="short" style="width: 100%" src="Images/ban.png" alt="" />
+        </ins>
+        <script>
+          // (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </section>
+    <!-- google Ads section end -->
+
+    <!-- articles section start -->
+    <section class="container-fulid text-center">
+      <h2 class="text-center mt-5" style="font-weight: bold">
+        <span style="color: #53add0">Our Popular</span>Articles
+      </h2>
+
+      <section class="slide-container">
+        <div class="card__container swiper">
+          <div class="article__card__content">
+            <div class="swiper-wrapper">
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">
+                    Best ETFs in India- Invest in Best Performing ETFs 2025
+                  </h5>
+                  <a
+                    href="https://www.fincash.com/l/best-etfs"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">
+                    What is cKYC and How to get Central KYC done?
+                  </h5>
+                  <a
+                    href="https://www.fincash.com/l/ckyc-central-kyc"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">Best Index Mutual Funds for Investments 2025</h5>
+                  <a
+                    href="https://www.fincash.com/l/best-index-funds"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">
+                    Top 10 Best Health Insurance Companies in India
+                  </h5>
+                  <a
+                    href="https://www.fincash.com/l/insurance/top-10-health-insurance-companies"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">
+                    Post Office Saving Schemes- 9 Investment Schemes
+                  </h5>
+                  <a
+                    href="https://www.fincash.com/l/post-office-saving-schemes"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">CVL KRA - CDSL Ventures Limited</h5>
+                  <a
+                    href="https://www.fincash.com/l/cvl-kra"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">
+                    Top Debit Cards Of 2025 - 2026 You Must Know!
+                  </h5>
+                  <a
+                    href="https://www.fincash.com/l/pf/best-debit-cards"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">
+                    Latest Updates On The 7th Pay Commission Pay Matrix
+                  </h5>
+                  <a
+                    href="https://www.fincash.com/l/tax/7th-pay-commission"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">
+                    How To Link Mobile Number To Aadhaar Card Online?
+                  </h5>
+                  <a
+                    href="https://www.fincash.com/l/aadhaar/link-mobile-number-to-aadhaar-card-online"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card__article swiper-slide">
+                <div class="testimonial-card">
+                  <h5 class="">CAMS KRA</h5>
+                  <a
+                    href="https://www.fincash.com/l/cams-kra"
+                    class="article-btn"
+                    >READ NOW &nbsp;<i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-article-btn-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+          <div class="swiper-article-btn-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-article-pagination"></div>
+        </div>
+      </section>
+
+      <button class="btn btn-primary mt-5 pt-2">
+        <a
+          style="text-decoration: none; color: #ffffff"
+          href="https://www.fincash.com/l/"
+        >
+          View All &nbsp; &nbsp; <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </button>
+    </section>
+    <!-- articles section end -->
+
+    <!-- investment plan start -->
+    <section class="plans-section container-fuild">
+      <div class="container-md plans-container">
+        <h2 class="text-center mt-4" style="font-weight: bold">
+          <span style="color: #53add0">START AN</span> INVESTMENT PLAN
+        </h2>
+      </div>
+
+      <ul class="plans-navbar">
+        <li class="nav-Retirement active-plans-text">Retirement Planning</li>
+        <li class="nav-Education">Higher Education</li>
+        <li class="nav-Marriage">Marriage</li>
+        <li class="nav-House">Buy a House</li>
+        <li class="nav-Vehicle">Buy a Vehicle</li>
+        <li class="nav-Goal">Other Goal</li>
+      </ul>
+
+      <div class="plans-content-boxes">
+        <div class="plans-content-amount-box">
+          <div class="plans-years-content">
+            <div class="plans-amount-box">
+              <div class="plans-amount-price d-flex">
+                <div class="price-box">
+                  <input
+                    type="text"
+                    class="plans-price"
+                    id="rangeValue1"
+                    value="18"
+                    oninput="plansSlider1(this.value)"
+                  />
+                  <p>Years</p>
+                </div>
+              </div>
+            </div>
+
+            <input
+              class="range"
+              type="range"
+              name=""
+              id=""
+              min="18"
+              max="59"
+              value="18"
+              oninput="plansInput1(this.value)"
+            />
+            <div class="plans-year-questions">
+              <p class="year-Retirement active-content">
+                What is your current age?
+              </p>
+              <p class="year-Education">Years to go for higher studies?</p>
+              <p class="year-Marriage">Years left for marriage?</p>
+              <p class="year-House">
+                After how long are you planning to buy a house?
+              </p>
+              <p class="year-Vehicle">
+                After how long are you planning to buy a vehicle?
+              </p>
+              <p class="year-Goal">
+                How long will you take to achieve your goal?
+              </p>
+            </div>
+          </div>
+
+          <div class="plans-amount-content">
+            <div class="plans-amount-box">
+              <div class="plans-amount-price d-flex">
+                <i
+                  class="fa-solid fa-indian-rupee-sign"
+                  style="color: #000"
+                ></i>
+                <div class="price-box">
+                  <input
+                    type="text"
+                    class="plans-price"
+                    id="rangeValue2"
+                    value="25000"
+                    oninput="plansSlider2(this.value)"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <input
+              class="range"
+              type="range"
+              name=""
+              id=""
+              min="25000"
+              max="2000000"
+              value="18"
+              oninput="plansInput2(this.value)"
+            />
+            <div class="plans-amount-questions">
+              <p class="amount-Retirement active-content">
+                What is your current monthly expenditure?
+              </p>
+              <p class="amount-Education">
+                How much would be the required amount for fees and expenses?
+              </p>
+              <p class="amount-Marriage">
+                Total amount required for the marriage?
+              </p>
+              <p class="amount-House">
+                How much amount do you need to buy the house?
+              </p>
+              <p class="amount-Vehicle">
+                How much amount do you need buy the vehicle?
+              </p>
+              <p class="amount-Goal">
+                How much amount do you need to achieve this goal?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn">
+        <a
+          href="https://www.fincash.com/calculator/sip/goals-q-retirement-planning;p1=18;p2=5000"
+          class="start-btn btn btn-primary"
+          >Get Start</a
+        >
+      </div>
+    </section>
+    <!-- investment plan end -->
+
+    <!-- google Ads section start -->
+    <section class="container-md p-4">
+      <div class="ad-container">
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-XXXXXX"
+          data-ad-slot="YYYYYY"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        >
+          <img class="long" style="width: 100%" src="Images/ban-2.jpg" alt="" />
+          <img class="short" style="width: 100%" src="Images/ban.png" alt="" />
+        </ins>
+        <script>
+          // (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </section>
+    <!-- google Ads section end -->
+
+    <!-- testimonials section start -->
+    <section class="container-fulid text-center">
+      <h2 class="text-center mt-5" style="font-weight: bold">
+        <span style="color: #53add0">You Happy</span> We Happy
+      </h2>
+
+      <section class="slide-container">
+        <div class="card__container swiper">
+          <div class="card__content">
+            <div class="swiper-wrapper">
+              <article class="card__testimonial swiper-slide">
+                <div class="testimonial-card">
+                  <img src="Images/review-1.jpg" alt="Profile Pic" />
+                  <h5 class="card-title">MANGESH NUTEKAR</h5>
+                  <p class="card-sub-title text-muted">
+                    Account Assistant Manager, Inox Mumbai
+                  </p>
+                  <p class="pt-3">
+                    "Get good feedback from fincash and satisfied with job done
+                    within the same day. Got full cooperation and cordination in
+                    minutes and hours."
+                  </p>
+                </div>
+              </article>
+
+              <article class="card__testimonial swiper-slide">
+                <div class="testimonial-card">
+                  <img src="Images/review-2.jpg" alt="Profile Pic" />
+                  <h5 class="card-title">Saurav sharma</h5>
+                  <p class="card-sub-title text-muted">
+                    Proprietor, Business Jaipur
+                  </p>
+                  <p class="pt-3">
+                    " Hi, I have invested in mutual funds through Fincash App.
+                    This is a great app. It is very easy to run/work. And my
+                    knowledge is Fayaz, to whom I want to say thanks. They guide
+                    me ..."
+                  </p>
+                </div>
+              </article>
+
+              <article class="card__testimonial swiper-slide">
+                <div class="testimonial-card">
+                  <img src="Images/review-3.jpg" alt="Profile Pic" />
+                  <h5 class="card-title">Lokesh Deshpande</h5>
+                  <p class="card-sub-title text-muted">
+                    Software engineer, Veritas Technologies Pune
+                  </p>
+                  <p class="pt-3">
+                    "Fincash.com is an excellent site, where anyone can explore
+                    fund related information, and other fund details. It also
+                    provides a good platform for growing wealth, where one can
+                    invest"
+                  </p>
+                </div>
+              </article>
+
+              <article class="card__testimonial swiper-slide">
+                <div class="testimonial-card">
+                  <img src="Images/review-4.jpg" alt="Profile Pic" />
+                  <h5 class="card-title">MANGESH NUTEKAR</h5>
+                  <p class="card-sub-title text-muted">
+                    Account Assistant Manager, Inox Mumbai
+                  </p>
+                  <p class="pt-3">
+                    "Get good feedback from fincash and satisfied with job done
+                    within the same day. Got full cooperation and cordination in
+                    minutes and hours."
+                  </p>
+                </div>
+              </article>
+
+              <article class="card__testimonial swiper-slide">
+                <div class="testimonial-card">
+                  <img src="Images/review-1.jpg" alt="Profile Pic" />
+                  <h5 class="card-title">MANGESH NUTEKAR</h5>
+                  <p class="card-sub-title text-muted">
+                    Account Assistant Manager, Inox Mumbai
+                  </p>
+                  <p class="pt-3">
+                    "Get good feedback from fincash and satisfied with job done
+                    within the same day. Got full cooperation and cordination in
+                    minutes and hours."
+                  </p>
+                </div>
+              </article>
+
+              <article class="card__testimonial swiper-slide">
+                <div class="testimonial-card">
+                  <img src="Images/review-2.jpg" alt="Profile Pic" />
+                  <h5 class="card-title">MANGESH NUTEKAR</h5>
+                  <p class="card-sub-title text-muted">
+                    Account Assistant Manager, Inox Mumbai
+                  </p>
+                  <p class="pt-3">
+                    "Get good feedback from fincash and satisfied with job done
+                    within the same day. Got full cooperation and cordination in
+                    minutes and hours."
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Navigation buttons -->
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination">asd</div>
+        </div>
+      </section>
+
+      <button class="btn btn-primary pt-2">
+        <a
+          style="text-decoration: none; color: #fff"
+          href="https://www.fincash.com/l/user-review-fincash/all-user-reviews"
+        >
+          View All &nbsp; &nbsp; <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </button>
+    </section>
+    <!-- testimonials section end -->
+
+    <!-- feature section start -->
+    <section class="feature-section container-fuild">
+      <h2 class="text-center mt-5" style="font-weight: bold">
+        WITH <span style="color: #53add0">FINCASH</span> YOU CAN
+      </h2>
+
+      <div class="container-md feature-container p-3">
+        <a href="">
+          <div class="solutions-content-box box-border">
+            <div class="image-box">
+              <img
+                class="feture-img"
+                src="Images/invest_in_5_clicks.png"
+                alt="invest_in_5_clicks"
+              />
+            </div>
+            <h6>Invest in 5 Clicks</h6>
+            <p class="pt-2" style="font-size: 14px">
+              A seamless process to make investment simple
+            </p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="solutions-content-box box-border">
+            <div class="image-box">
+              <img
+                class="feture-img"
+                src="Images/In-house_Fund_Rating.png"
+                alt="In-house_Fund_Rating"
+              />
+            </div>
+            <h6>In-house Fund Rating</h6>
+            <p class="pt-2" style="font-size: 14px">
+              Authentic methodology of fund selection & unbiased rating
+            </p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="solutions-content-box box-border">
+            <div class="image-box">
+              <img
+                class="credit-img"
+                src="Images/Product_Solutions.png"
+                alt="Product_Solutions"
+              />
+            </div>
+            <h6>Product Solutions</h6>
+            <p class="pt-2" style="font-size: 14px">
+              Product solutions designed to cater your needs
+            </p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="solutions-content-box box-border">
+            <div class="image-box">
+              <img
+                class="feture-img"
+                src="Images/Save_Taxes.png"
+                alt="Save_Taxes"
+              />
+            </div>
+            <h6>Save Taxes</h6>
+            <p class="pt-2" style="font-size: 14px">
+              Invest in tax-saving instruments and earn tax-free healthy returns
+            </p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- feature section end -->
+
+    <!-- google Ads section start -->
+    <section class="container-fuild p-4">
+      <div class="ad-container">
+        <ins
+          class="adsbygoogle"
+          style="display: block"
+          data-ad-client="ca-pub-XXXXXX"
+          data-ad-slot="YYYYYY"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        >
+          <img class="long" style="width: 100%" src="Images/ban-2.jpg" alt="" />
+          <img class="short" style="width: 100%" src="Images/ban.png" alt="" />
+        </ins>
+        <script>
+          // (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </section>
+    <!-- google Ads section end -->
+
+    <!-- footer section start -->
+    <footer class="footer-section container-fuild">
+      <section>
+        <div class="getintouch-box">
+          <p class="getintouch-text">
+            Questions? Get in Touch! <br />
+            Give us a missed call to get a call back
+          </p>
+          <div class="getintouch-info">
+            <p><i class="fa-solid fa-mobile"></i>&nbsp; +91-22-48913909</p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>&nbsp; support@fincash.com
+            </p>
+          </div>
+        </div>
+
+        <div class="link-box-web-container">
+          <div class="link-box product-links">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#product-solutions"
+              role="button"
+              aria-expanded="false"
+              aria-controls="product-solutions"
+            >
+              <h5>PRODUCT SOLUTIONS</h5>
+            </div>
+
+            <ul class="link-list">
+              <li><a href="https://www.fincash.com/solutions/savings-plus" class="">SavingPlus</a></li>
+              <li><a href="https://www.fincash.com/solutions/smart-sip" class="">SmartSIP</a></li>
+              <li><a href="https://www.fincash.com/solutions/tax-saver" class="">Tax Saver</a></li>
+              <li><a href="https://www.fincash.com/solutions/new-fund-offers" class="">New Funds Offers</a></li>
+              <li><a href="https://www.fincash.com/explore" class="">Explore Funds</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box mutual-funds-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#mutual-funds"
+              role="button"
+              aria-expanded="false"
+              aria-controls="mutual-funds"
+            >
+              <h5>MUTUAL FUNDS</h5>
+            </div>
+
+            <ul class="link-list">
+              <li><a href="https://www.fincash.com/l/basic-mutual-funds-terminology?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web" class="">Mutual Fund Basics</a></li>
+              <li><a href="https://www.fincash.com/l/financial-planning?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web" class="">Financial Planning</a></li>
+              <li><a href="https://www.fincash.com/l/sip-systematic-investment-plan?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web" class="">SIP</a></li>
+              <li><a href="https://www.fincash.com/l/mutual-fund-taxation-india?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web" class="">Taxation</a></li>
+              <li><a href="https://www.fincash.com/l/retirement-planning?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web" class="">Retirement</a></li>
+              <li><a href="https://www.fincash.com/l/best-gold-mutual-funds?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web" class="">Gold</a></li>
+              <li><a href="https://www.fincash.com/l/asset-management-companies-india?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web" class="">Mutual Fund Compaines</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box topfunds-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#top-funds"
+              role="button"
+              aria-expanded="false"
+              aria-controls="top-funds"
+            >
+              <h5>TOP FUNDS</h5>
+            </div>
+
+            <ul class="link-list">
+              <li><a class="" href="https://www.fincash.com/l/best-performing-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Performing Mutual Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-liquid-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Liquid Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/top-11-sip-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Top 10 SIP Mutual Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/top-balanced-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Top Balanced Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-elss-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best ELSS Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-equity-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Equity Mutual Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-large-cap-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Large Cap Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-ultra-short-term-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Ultra Short Term Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-index-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Index Funds</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box calculator-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#calculator"
+              role="button"
+              aria-expanded="false"
+              aria-controls="calculator"
+            >
+              <h5>CALCULATORS</h5>
+            </div>
+
+            <ul class="link-list">
+              <li><a class="" href="https://www.fincash.com/calculator/tax">Tax Calculator</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/lumpsum/returns">Growth of Lumpsum</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/returns">Growth of SIP</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-retirement-planning">Retirement Planning</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-higher-education">Higher Education</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-marriage">Marriage Expense</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-buy-house">Buy House</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-buy-vehicle">Buy Vehicle</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-other">Any Other Goal</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box about-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#aboutus"
+              role="button"
+              aria-expanded="false"
+              aria-controls="aboutus"
+            >
+              <h5>ABOUT US</h5>
+            </div>
+
+            <ul class="link-list">
+              <li><a class="" href="https://www.fincash.com/static/building-trust">Building Trust</a></li>
+              <li><a class="" href="https://www.fincash.com/static/why-fincash">Why Fincash</a></li>
+              <li><a class="" href="https://www.fincash.com/static/about-us">Team</a></li>
+              <li><a class="" href="https://www.fincash.com/static/partners">Our Partners</a></li>
+              <li><a class="" href="https://www.fincash.com/static/media-center">Media Center</a></li>
+              <li><a class="" href="https://www.fincash.com/l/corporate-program">Corporate Solution</a></li>
+            </ul>
+
+            <div class="media-link-web">
+              <div
+                class=""
+                data-bs-toggle="collapse"
+                href="#media-icon"
+                role="button"
+                aria-expanded="false"
+                aria-controls="media-icon"
+              >
+                <h5>Contact Us</h5>
+              </div>
+
+              <ul class="media-link-list">
+                <a class="" href="https://www.linkedin.com/company/fincash.com/"
+                  ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+                ></a>
+                <a class="" href="https://x.com/TheFincash"
+                  ><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i
+                ></a>
+                <a class="" href="https://www.youtube.com/@TheFincash"
+                  ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+                ></a>
+                <a class="" href="https://www.instagram.com/thefincash/"
+                  ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+                ></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- small drive link section start -->
+      <section class="link-box-mob-container">
+        <div class="link-box contact-container">
+          <div
+            class="link-box-heading"
+            data-bs-toggle="collapse"
+            href="#contact-us"
+            role="button"
+            aria-expanded="false"
+            aria-controls="contact-us"
+          >
+            <h5>Contact Us</h5>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <ul class="link-box-dropdown collapse multi-collapse" id="contact-us">
+            <li>
+              <a class="" href="#"
+                ><i class="fa-solid fa-mobile"></i>&nbsp; +91-22-48913909</a
+              >
+            </li>
+            <li>
+              <a class="" href="#"
+                ><i class="fa-solid fa-envelope"></i>&nbsp;
+                support@fincash.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="link-box-container">
+          <div class="link-box product-links">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#product-solutions"
+              role="button"
+              aria-expanded="false"
+              aria-controls="product-solutions"
+            >
+              <h5>PRODUCT SOLUTIONS</h5>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <ul
+              class="link-box-dropdown collapse multi-collapse"
+              id="product-solutions"
+            >
+              <li><a class="" href="https://www.fincash.com/solutions/savings-plus">SavingPlus</a></li>
+              <li><a class="" href="https://www.fincash.com/solutions/smart-sip">SmartSIP</a></li>
+              <li><a class="" href="https://www.fincash.com/solutions/tax-saver">Tax Saver</a></li>
+              <li><a class="" href="https://www.fincash.com/solutions/new-fund-offers">New Funds Offers</a></li>
+              <li><a class="" href="https://www.fincash.com/explore">Explore Funds</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box mutual-funds-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#mutual-funds"
+              role="button"
+              aria-expanded="false"
+              aria-controls="mutual-funds"
+            >
+              <h5>MUTUAL FUNDS</h5>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <ul
+              class="link-box-dropdown collapse multi-collapse"
+              id="mutual-funds"
+            >
+              <li><a class="" href="https://www.fincash.com/l/basic-mutual-funds-terminology?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web">Mutual Fund Basics</a></li>
+              <li><a class="" href="https://www.fincash.com/l/financial-planning?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web">Financial Planning</a></li>
+              <li><a class="" href="https://www.fincash.com/l/sip-systematic-investment-plan?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web">SIP</a></li>
+              <li><a class="" href="https://www.fincash.com/l/mutual-fund-taxation-india?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web">Taxation</a></li>
+              <li><a class="" href="https://www.fincash.com/l/retirement-planning?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web">Retirement</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-gold-mutual-funds?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web">Gold</a></li>
+              <li><a class="" href="https://www.fincash.com/l/asset-management-companies-india?utm_source=fincash.com&utm_campaign=fincash.com&utm_medium=web">Mutual Fund Compaines</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box topfunds-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#top-funds"
+              role="button"
+              aria-expanded="false"
+              aria-controls="top-funds"
+            >
+              <h5>TOP FUNDS</h5>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <ul
+              class="link-box-dropdown collapse multi-collapse"
+              id="top-funds"
+            >
+              <li><a class="" href="https://www.fincash.com/l/best-performing-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Performing Mutual Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-liquid-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Liquid Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/top-11-sip-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Top 10 SIP Mutual Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/top-balanced-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Top Balanced Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-elss-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best ELSS Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-equity-mutual-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Equity Mutual Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-large-cap-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Large Cap Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-ultra-short-term-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Ultra Short Term Funds</a></li>
+              <li><a class="" href="https://www.fincash.com/l/best-index-funds?utm_source=fincash.com&utm_campaign=top_footer&utm_medium=web">Best Index Funds</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box calculator-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#calculator"
+              role="button"
+              aria-expanded="false"
+              aria-controls="calculator"
+            >
+              <h5>CALCULATORS</h5>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <ul
+              class="link-box-dropdown collapse multi-collapse"
+              id="calculator"
+            >
+              <li><a class="" href="https://www.fincash.com/calculator/tax">Tax Calculator</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/lumpsum/returns">Growth of Lumpsum</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/returns">Growth of SIP</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-retirement-planning">Retirement Planning</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-higher-education">Higher Education</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-marriage">Marriage Expense</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-buy-house">Buy House</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-buy-vehicle">Buy Vehicle</a></li>
+              <li><a class="" href="https://www.fincash.com/calculator/sip/goals-q-other">Any Other Goal</a></li>
+            </ul>
+          </div>
+
+          <div class="link-box about-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#aboutus"
+              role="button"
+              aria-expanded="false"
+              aria-controls="aboutus"
+            >
+              <h5>ABOUT US</h5>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <ul class="link-box-dropdown collapse multi-collapse" id="aboutus">
+              <li><a class="" href="https://www.fincash.com/static/building-trust">Building Trust</a></li>
+              <li><a class="" href="https://www.fincash.com/static/why-fincash">Why Fincash</a></li>
+              <li><a class="" href="https://www.fincash.com/static/about-us">Team</a></li>
+              <li><a class="" href="https://www.fincash.com/static/partners">Our Partners</a></li>
+              <li><a class="" href="https://www.fincash.com/static/media-center">Media Center</a></li>
+              <li><a class="" href="https://www.fincash.com/l/corporate-program">Corporate Solution</a></li>
+            </ul>
+          </div>
+          <div class="link-box media-link">
+            <div
+              class="link-box-heading"
+              data-bs-toggle="collapse"
+              href="#media-icon"
+              role="button"
+              aria-expanded="false"
+              aria-controls="media-icon"
+            >
+              <h5>Contact Us</h5>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <ul class="media-box collapse multi-collapse" id="media-icon">
+              <a class="" href="https://www.linkedin.com/company/fincash.com/"
+                ><i class="fa-brands fa-linkedin" style="color: #ffffff"></i
+              ></a>
+              <a class="" href="https://x.com/TheFincash"
+                ><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i
+              ></a>
+              <a class="" href="https://www.youtube.com/@TheFincash"
+                ><i class="fa-brands fa-youtube" style="color: #ffffff"></i
+              ></a>
+              <a class="" href="https://www.instagram.com/thefincash/"
+                ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+              ></a>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- small drive link section end -->
+
+      <div class="footer-features-container container-fuild">
+        <div class="footer-feature-box">
+          <div class="footer-feature-image">
+            <img src="Images/easy-use.png" alt="easy to use" />
+          </div>
+          <p>
+            EASY <br />
+            TO USE
+          </p>
+        </div>
+        <div class="footer-feature-box border-line">
+          <div class="footer-feature-image">
+            <img src="Images/methodology.png" alt=" proven methodology" />
+          </div>
+          <p>
+            PROVEN <br />
+            METHODOLOGY
+          </p>
+        </div>
+        <div class="footer-feature-box border-line">
+          <div class="footer-feature-image">
+            <img src="Images/safe_secure.png" alt="safe and scure" />
+          </div>
+          <p>
+            SAFE & SECURE <br />
+            TRANSACTION
+          </p>
+        </div>
+      </div>
+
+      <div class="container-md company-info-container">
+        <p class="company-dtls">
+          Shepard Technologies Pvt. Ltd : 1808, Solus, Hiranandani Estate, Off
+          Ghodbunder Road, Thane, Maharashtra - 400607
+        </p>
+
+        <div class="lic-box">
+          <b>AMFI Registration No. 112358</b>
+          <b>CIN: U74999MH2016PTC282153</b>
+        </div>
+
+        <p class="company-dtls">
+          Mutual fund investments are subject to market risks. Please read the
+          scheme information and other related documents carefully before
+          investing. Past performance is not indicative of future returns.
+          Please consider your specific investment requirements before choosing
+          a fund, or designing a portfolio that suits your needs.
+        </p>
+
+        <p class="company-dtls">
+          Shepard Technologies Pvt. Ltd (with ARN code 112358) makes no
+          warranties or representations, express or implied, on products offered
+          through the platform. It accepts no liability for any damages or
+          losses, however caused connection with the use of, or on the reliance
+          of its product or related services. Terms and conditions of the
+          website are applicable.
+        </p>
+      </div>
+
+      <div class="privacy-container">
+        <p>©2023 Shepard Technologies Private Limited. All Rights Reserved</p>
+        <div class="privacy-links">
+          <p><a href="https://www.fincash.com/static/privacy-policy">Privacy Policy</a></p>
+          <p><a href="https://www.fincash.com/static/terms-conditions">Terms& Conditions</a></p>
+          <p><a href="https://www.fincash.com/static/disclaimers">Disclamiers</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!--=============== SWIPER JS ===============-->
+  <script src="Slider-links/js/swiper-bundle.min.js"></script>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="Slider-links/js/main.js"></script>
+</html>
